@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="css/bootstrap.min.css" rel="stylesheet" />
+        <link href="css/style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="container h-100">
+            <div class="row h-100 justify-content-center align-items-center">
+                <div class="col-4 bordered">
+                    <div class="bg-black">
+                        <div class="row">
+                            <div class="col-12">
+                                <label>character type</label><span> (PRIMARY type)</span>
+                                <div class="padding-right">
+                                    <select class="select" id="primary">
+                                        <option value="">SELECT A TYPE...</option>
+                                        <option value="angel" data-attack="0" data-speed="0" data-special="1" data-will = "1">Angel</option>
+                                        <option value="demon" data-attack="1" data-speed="1" data-special="0" data-will = "0">Demon</option>
+                                        <option value="elemental" data-attack="1" data-speed="0" data-special="1" data-will = "0">Elemental</option>
+                                        <option value="fantasy" data-attack="0" data-speed="0" data-special="2" data-will = "0">Fantasy</option>
+                                        <option value="fighting" data-attack="1" data-speed="0" data-special="0" data-will = "1">Fighting</option>
+                                        <option value="furry" data-attack="0" data-speed="2" data-special="0" data-will = "0">Furry</option>
+                                        <option value="normal" data-attack="0" data-speed="0" data-special="0" data-will = "2">Normal</option>
+                                        <option value="super" data-attack="2" data-speed="0" data-special="0" data-will = "0">Super</option>
+                                        <option value="techno" data-attack="0" data-speed="1" data-special="0" data-will = "1">Techno</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <label>secondary type</label><span> (OPTIONAL)</span>
+                        <div class="padding-right">
+                            <select class="select">
+                                <option value="">SELECT A TYPE...</option>
+                                <option value="angel">Angel</option>
+                                <option value="demon">Demon</option>
+                                <option value="elemental">Elemental</option>
+                                <option value="fantasy">Fantasy</option>
+                                <option value="fighting">Fighting</option>
+                                <option value="furry">Furry</option>
+                                <option value="normal">Normal</option>
+                                <option value="super">Super</option>
+                                <option value="techno">Techno</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="bg-black padding-right">
+                        <label class="mid-size">DEVIATIONS</label>
+                        <input type="text" class="form-control form-control-sm" id="deviations" />
+                        <label class="mid-size">YEARS</label>
+                        <input type="text" class="form-control form-control-sm" id="years" />
+                        <label class="mid-size">PAGEVIEWS</label>
+                        <input type="text" class="form-control form-control-sm" id="pageviews" />
+                        <label class="mid-size">WATCHERS</label>
+                        <input type="text" class="form-control form-control-sm" id="watchers" />
+                    </div>
+                </div>
+                <div class="col-1">
+                    <diV class="row h-90 justify-content-center align-items-center">
+                        <div class="line-border"></div>
+                        <button type="button" id="submit">GO!</button>
+                    </diV>
+                </div>
+                <div class="col-4 bordered">
+                    <div class="bg-black">
+                        <div class="row">
+                            <div class="col-12">                                
+                                <label class="big-size"> ATTACK </label>
+                                <img class="big-star float-right" src="images/big-star.png" id="attackBigStar"/>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12" id="attackStars">
+                                <img class="stars" src="images/passive-star.png" />
+                                <img class="stars" src="images/passive-star.png" />
+                                <img class="stars" src="images/passive-star.png" />
+                                <img class="stars" src="images/passive-star.png" />
+                                <img class="stars" src="images/passive-star.png" />
+                                <img class="stars" src="images/passive-star.png" />
+                                <img class="stars" src="images/passive-star.png" />
+                                <img class="stars" src="images/passive-star.png" />
+                                <img class="stars" src="images/passive-star.png" />
+                                <img class="stars" src="images/passive-star.png" />
+                            </div>                            
+                        </div>
+                        <div class="row">
+                            <div class="col-12">                                
+                                <label class="big-size"> SPEED </label>
+                                <img class="big-star float-right" src="images/big-star.png" id="speedBigStar"/>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12" id="speedStars">
+                                <img class="stars" src="images/passive-star.png" />
+                                <img class="stars" src="images/passive-star.png" />
+                                <img class="stars" src="images/passive-star.png" />
+                                <img class="stars" src="images/passive-star.png" />
+                                <img class="stars" src="images/passive-star.png" />
+                                <img class="stars" src="images/passive-star.png" />
+                                <img class="stars" src="images/passive-star.png" />
+                                <img class="stars" src="images/passive-star.png" />
+                                <img class="stars" src="images/passive-star.png" />
+                                <img class="stars" src="images/passive-star.png" />
+                            </div>                            
+                        </div>
+                        <div class="row">
+                            <div class="col-12">                                
+                                <label class="big-size"> SPECIAL </label>
+                                <img class="big-star float-right" src="images/big-star.png" id="specialBigStar"/>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12" id="specialStars">
+                                <img class="stars" src="images/passive-star.png" />
+                                <img class="stars" src="images/passive-star.png" />
+                                <img class="stars" src="images/passive-star.png" />
+                                <img class="stars" src="images/passive-star.png" />
+                                <img class="stars" src="images/passive-star.png" />
+                                <img class="stars" src="images/passive-star.png" />
+                                <img class="stars" src="images/passive-star.png" />
+                                <img class="stars" src="images/passive-star.png" />
+                                <img class="stars" src="images/passive-star.png" />
+                                <img class="stars" src="images/passive-star.png" />
+                            </div>                            
+                        </div>
+                        <div class="row">
+                            <div class="col-12">                                
+                                <label class="big-size"> WILL </label>
+                                <img class="big-star float-right" src="images/big-star.png" id="willBigStar"/>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12" id="willStars">
+                                <img class="stars" src="images/passive-star.png" />
+                                <img class="stars" src="images/passive-star.png" />
+                                <img class="stars" src="images/passive-star.png" />
+                                <img class="stars" src="images/passive-star.png" />
+                                <img class="stars" src="images/passive-star.png" />
+                                <img class="stars" src="images/passive-star.png" />
+                                <img class="stars" src="images/passive-star.png" />
+                                <img class="stars" src="images/passive-star.png" />
+                                <img class="stars" src="images/passive-star.png" />
+                                <img class="stars" src="images/passive-star.png" />
+                            </div>                            
+                        </div>
+                    </div>
+                </div>            
+            </div>
+        </div>
+
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript">
+            $('#submit').click(function(){        
+                 var deviations = parseFloat($('#deviations').val())||0;
+                 var years = parseFloat($('#years').val())||0;
+                 var pageviews = parseFloat($('#pageviews').val())||0;
+                 var watchers = parseFloat($('#watchers').val())||0;
+
+                var speed = Math.round(years + 1);
+                var special = Math.round(((pageviews/100000)*10) + 1);
+                var will = Math.round(((watchers/10000)*10) + 1);
+                if (will>10) { will=10;}
+                if (special>10) { special=10;}     
+                if (speed>10) { speed=10;}
+                var attack = Math.round((((deviations/1000*10) + 1) + speed + special + will)/4);
+                if (attack>10) { attack=10;}
+
+                var typeAttack = parseFloat($('#primary').find(':selected').data('attack'))||0;
+                var typeSpeed = parseFloat($('#primary').find(':selected').data('speed'))||0;
+                var typeSpecial = parseFloat($('#primary').find(':selected').data('special'))||0;
+                var typeWill = parseFloat($('#primary').find(':selected').data('will'))||0;
+
+                attack = attack + typeAttack;
+                speed = speed + typeSpeed;
+                special = special + typeSpecial;
+                will = will + typeWill;
+
+                if (will>10) { will=10;}
+                if (special>10) { special=10;}     
+                if (speed>10) { speed=10;}
+                if (attack>10) { attack=10;}
+                
+                var attackHtml = ''; 
+                var speedHtml = ''; 
+                var specialHtml = '';
+                var willHtml = '';
+                for (i = 1; i <= 10; i++) {
+                    if(i <= attack){
+                        attackHtml += '<img class="stars" src="images/active-star.png" />';
+                    }
+                    else {
+                        attackHtml += '<img class="stars" src="images/passive-star.png" />';
+                    }
+
+                    if(i <= speed){
+                        speedHtml += '<img class="stars" src="images/active-star.png" />';
+                    }
+                    else {
+                        speedHtml += '<img class="stars" src="images/passive-star.png" />';
+                    }
+
+                    if(i <= special){
+                        specialHtml += '<img class="stars" src="images/active-star.png" />';
+                    }
+                    else {
+                        specialHtml += '<img class="stars" src="images/passive-star.png" />';
+                    }
+                    if(i <= will){
+                        willHtml += '<img class="stars" src="images/active-star.png" />';
+                    }
+                    else {
+                        willHtml += '<img class="stars" src="images/passive-star.png" />';
+                    }
+                }
+
+                $('#attackStars').html(attackHtml);
+                $('#speedStars').html(speedHtml);
+                $('#specialStars').html(specialHtml);
+                $('#willStars').html(willHtml);
+
+                if(attack >= 10){
+                    $('#attackBigStar').attr('src','images/yellow-big-star.png');
+                }
+                else{
+                    $('#attackBigStar').attr('src','images/big-star.png');
+                }
+                if(speed >= 10){
+                    $('#speedBigStar').attr('src','images/yellow-big-star.png');
+                }
+                else{
+                    $('#speedBigStar').attr('src','images/big-star.png');
+                }
+                if(special >= 10){
+                    $('#specialBigStar').attr('src','images/yellow-big-star.png');
+                }
+                else{
+                    $('#specialBigStar').attr('src','images/big-star.png');
+                }
+                if(will >= 10){
+                    $('#willBigStar').attr('src','images/yellow-big-star.png');
+                }
+                else{
+                    $('#willBigStar').attr('src','images/big-star.png');
+                }
+            });
+        </script>
+    </body>
+</html>
